@@ -9,12 +9,17 @@ return [
             'robotEmail' => 'no-reply@domain.com',
             'robotName' => 'Robot'
         ],
-        'blogs' => [
-            'class' => 'vova07\blogs\Module'
-        ],
-        'comments' => [
-            'class' => 'vova07\comments\Module'
-        ]
+        // 'users' => [
+        //     'class' => 'custom_components\modules\users\Module',
+        //     'robotEmail' => 'no-reply@domain.com',
+        //     'robotName' => 'Robot'
+        // ],
+        // 'blogs' => [
+        //     'class' => 'vova07\blogs\Module'
+        // ],
+        // 'comments' => [
+        //     'class' => 'vova07\comments\Module'
+        // ]
     ],
     'components' => [
         'user' => [
@@ -22,6 +27,11 @@ return [
             'identityClass' => 'vova07\users\models\User',
             'loginUrl' => ['/users/guest/login']
         ],
+        // 'user' => [
+        //     'class' => 'yii\web\User',
+        //     'identityClass' => 'custom_components\modules\users\models\User',
+        //     'loginUrl' => ['/users/guest/login']
+        // ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
             'cachePath' => '@root/cache',

@@ -28,7 +28,8 @@
         "vova07/yii2-start-users-module": "*",
         "vova07/yii2-start-blogs-module": "*",
         "vova07/yii2-start-comments-module": "*",
-        "vova07/yii2-start-rbac-module": "*"
+        "vova07/yii2-start-rbac-module": "*",
+		"mdmsoft/yii2-admin": "~2.0"
     },
     "require-dev": {
     	"yiisoft/yii2-debug": "*",
