@@ -1,6 +1,6 @@
 {
 	"name": "vova07/yii2-start",
-	"description": "Yii2-Start it's a small Yii 2 application template for your fast project start.",
+	"description": "Modify Yii2-Start it's a small Yii 2 application template for your fast project start.",
 	"keywords": ["yii2", "yii 2", "application", "start", "bootstrap"],
 	"homepage": "http://yii2-start.find-freelancer.pro",
 	"type": "project",
@@ -8,32 +8,30 @@
     "support": {
         "issues": "https://github.com/vova07/yii2-start/issues?q=is%3Aopen",
         "forum": "http://yiiframework.ru/forum/viewtopic.php?f=28&t=16414",
-        "source": "https://github.com/vova07/yii2-start"
+        "source": "https://github.com/vova07/yii2-start",
+        "modify": "https://github.com/vova07/yii2-start"
     },
     "authors": [
         {
-            "name": "Vasile Crudu",
-            "email": "bazillio07@yandex.ru"
+            "name": "myzero1",
+            "email": "myzero1@sina.com"
         }
     ],
 	"minimum-stability": "stable",
 	"require": {
-		"php": ">=5.4.0",
-		"yiisoft/yii2": "*",
-		"yiisoft/yii2-bootstrap": "*",
-        "vova07/yii2-start-base": "*",
-        "vova07/yii2-start-themes": "*",
-        "vova07/yii2-start-admin-module": "*",
-        "vova07/yii2-start-site-module": "*",
-        "vova07/yii2-start-users-module": "*",
-        "vova07/yii2-start-blogs-module": "*",
-        "vova07/yii2-start-comments-module": "*",
-        "vova07/yii2-start-rbac-module": "*",
-		"mdmsoft/yii2-admin": "~2.0"
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "yiisoft/yii2-jui": "^2.0"
     },
     "require-dev": {
-    	"yiisoft/yii2-debug": "*",
-    	"yiisoft/yii2-gii": "*"
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1"
     },
     "config": {
         "process-timeout": 1800
@@ -42,6 +40,15 @@
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "php init --env=Development --overwrite=n"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
         }
     }
 }
