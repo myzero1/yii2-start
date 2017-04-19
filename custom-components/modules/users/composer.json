@@ -1,0 +1,32 @@
+{
+    "name": "custom_components\modules/yii2-start-users-module",
+    "description": "The users module for Yii2-Start application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "users", "user", "module", "modules", "account", "management", "profile", "profiles", "yii2-start"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Crudu Vasile",
+            "email": "bazillio07@yandex.ru"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/custom_components\modules/yii2-users-module/issues?state=open",
+        "source": "https://github.com/custom_components\modules/yii2-users-module"
+    },
+    "require": {
+        "yiisoft/yii2-swiftmailer": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "custom_components\modules/yii2-start": "*",
+        "custom_components\modules/yii2-start-rbac-module": "*",
+        "custom_components\modules/yii2-fileapi-widget": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "custom_components\modules\\users\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "custom_components\modules\\users\\Bootstrap"
+    }
+}

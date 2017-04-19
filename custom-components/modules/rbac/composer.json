@@ -1,0 +1,29 @@
+{
+    "name": "custom_components\modules/yii2-start-rbac-module",
+    "description": "The RBAC module for Yii2-Start application.",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "rbac", "module", "modules", "management"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Crudu Vasile",
+            "email": "bazillio07@yandex.ru"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/custom_components\modules/yii2-start-rbac-module/issues?state=open",
+        "source": "https://github.com/custom_components\modules/yii2-start-rbac-module"
+    },
+    "require": {
+        "yiisoft/yii2": "*",
+        "custom_components\modules/yii2-select2-widget": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "custom_components\modules\\rbac\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "custom_components\modules\\rbac\\Bootstrap"
+    }
+}
