@@ -164,3 +164,9 @@ Themes:
 -------
 - Application backend it's based on "AdminLTE" template. More detail about this nice template you can find [here](http://www.bootstrapstage.com/admin-lte/).
 - Application frontend it's based on "Flat Theme". More detail about this nice theme you can find [here](http://shapebootstrap.net/item/flat-theme-free-responsive-multipurpose-site-template/).
+
+=======Use high_cohesion_low_coupling========
+-------
+- git clone https://github.com/myzero1/yii2-start.git
+- git feature/high_cohesion_low_coupling
+- php composer.phar update -vvv
